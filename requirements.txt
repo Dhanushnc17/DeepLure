@@ -1,0 +1,27 @@
+# Core PyTorch and Vision
+torch>=2.0.0
+torchvision>=0.15.0
+timm>=0.9.7
+
+# Numerical, Image & Data Processing
+numpy>=1.23.0
+scipy>=1.10.0
+pandas>=2.0.0
+pillow>=9.5.0
+albumentations>=1.3.0
+scikit-learn>=1.2.0
+
+# Metric Learning & Retrieval
+faiss-cpu>=1.7.4
+
+# Experiment Tracking, Utilities & Configuration
+pyyaml>=6.0
+tqdm>=4.65.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Code Quality & Testing
+pytest>=7.3.0
+pytest-cov>=4.1.0
+flake8>=6.0.0
+black>=23.3.0

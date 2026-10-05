@@ -1,0 +1,23 @@
+# Fast Inference & Edge Deployment Configuration
+project:
+  name: "deeplure_saree_recognition_fast"
+  device: "cuda"
+
+data:
+  image_size: [224, 224]
+
+model:
+  backbone: "mobilenetv4_conv_small.e1200_r224_in1k"
+  pretrained: true
+  embedding_dim: 128
+  pooling: "gem"
+  gem_p: 3.0
+  gem_trainable: false
+  dropout: 0.0
+  adversarial_color_disentanglement:
+    enabled: false
+
+evaluation:
+  metric: "cosine"
+  top_k: [1, 5]
+  verification_threshold: 0.68
